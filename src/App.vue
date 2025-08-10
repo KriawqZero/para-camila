@@ -28,6 +28,7 @@
 
       <div class="bg-black/60 rounded-xl p-6 mb-6">
         <p class="text-lg text-gray-100 leading-relaxed text-center">
+
           {{ photos[currentIndex].caption }}
         </p>
       </div>
@@ -37,13 +38,15 @@
           v-if="currentIndex > 0"
           @click="currentIndex--"
           class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all duration-300"
+
         >
           Anterior
         </button>
         <button
           v-if="currentIndex < photos.length - 1"
           @click="currentIndex++"
-          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full transition-all duration-300"
+          class="bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-full transition-all duration-300"
+
         >
           Próximo
         </button>
@@ -64,6 +67,7 @@
         Pai Marcilio, obrigado por tudo.
       </p>
       <p class="text-lg text-gray-300">Seu filho, Marcilio.</p>
+
     </div>
   </div>
 </template>
@@ -76,6 +80,7 @@ export default {
       currentIndex: 0,
       photos: [
         { src: 'https://source.unsplash.com/600x900/?father,baby&sig=1', caption: 'Quando eu ainda era pequeno.' },
+
         { src: 'https://source.unsplash.com/600x900/?father,child&sig=2', caption: 'Nossos passeios no parque.' },
         { src: 'https://source.unsplash.com/600x900/?father,kid&sig=3', caption: 'Você me ensinando a andar de bicicleta.' },
         { src: 'https://source.unsplash.com/600x900/?father,son&sig=4', caption: 'Primeiro dia de aula, você ao meu lado.' },
