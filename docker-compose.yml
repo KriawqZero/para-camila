@@ -1,0 +1,11 @@
+services:
+  para-camila:
+    build: .
+    container_name: para-camila
+    restart: always
+    networks:
+      - nginx
+
+networks:
+  nginx:
+    driver: bridge
